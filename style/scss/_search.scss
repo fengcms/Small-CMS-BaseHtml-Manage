@@ -1,0 +1,10 @@
+.search {
+  margin-bottom: 15px;
+  @extend .cf;
+  .item {
+    float: left;margin-right: 10px;
+    strong {
+      color: $elblack;
+    }
+  }
+}

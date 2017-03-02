@@ -1,0 +1,22 @@
+.btn {
+  display: inline-block;margin-right: 4px;padding: 5px 8px;height: 18px;line-height: 18px;
+  background: $cff;border-radius: 5px;cursor: pointer;
+  box-shadow: 0 0 0 1px $gray inset;color: $elblack;
+  @include dz();
+  i {width: 15px;text-align: center;}
+  &.add,&.edit {
+    background: $green;color: $cff;box-shadow: 0 0 0 1px darken($green,.5) inset;
+  }
+  &.save {
+    background: $blue;color: $cff;box-shadow: 0 0 0 1px darken($blue,.5) inset;
+  }
+  &.detele {
+    background: $red;color: $cff;box-shadow: 0 0 0 1px darken($red,.5) inset;
+  }
+  &.mini {
+    font-size: 12px;padding:3px 5px;height: 12px;line-height: 12px;border-radius: 3px;margin-right: 2px;
+  }
+  &:hover {
+    box-shadow: 0 0 0 100px rgba($c22,.1) inset;
+  }
+}
