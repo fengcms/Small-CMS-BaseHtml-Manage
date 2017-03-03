@@ -1,77 +1,28 @@
 .header {
-  height: 40px;line-height: 40px;background: $blue;
-  @extend .cf;
-  position: fixed;left: 0;top: 0;right: 0;
+  height: 280px;
+  @include jb($blue,$green,45);
   .logo {
-    float: left;font-size: 16px;
-    a {
-      display: block;color: $cff;padding: 0 15px;
-      background: darken($blue,5%);
-      text-shadow: 1px 1px 2px $c55;
-      &:hover {
-        background: darken($blue,10%);
-      }
-    }
-  }
-  .header_link {
-    float: right;
-    a {
-      display: block;padding: 0 10px;color: $cff;
-      box-shadow: 0 -1px 0 1px rgba($cff,.4), 0 -2px 0 2px rgba($c22,.2);
-      &:hover {
-        background: darken($blue,10%);
-      }
-    }
+    font-size: 48px;text-align: center;line-height: 240px;
+    text-shadow: 1px 1px 2px $c55;
+    a {color: $cff;opacity: .8;}
   }
 }
 .menu {
-  position: fixed;left: 0;top: 40px;bottom: 0;width: 200px;
-  background: $elgray;
-  h2 {
-    height: 32px;line-height: 32px;text-align: center;font-size: 14px;color: $elblack;
-    background: $elsilver;font-weight: normal;
-  }
-  dl {
-    dt {
-      height: 36px;line-height: 36px;background: $gray;
-      text-indent: 30px;font-weight: bold;color: $silver;font-size: 14px;
-      i {width: 15px;text-indent: 0;}
-    }
-    dd {
-      height: 45px;line-height: 45px;background: $lgray;
-      text-indent: 48px;font-size: 13px;
-      &:not(:last-of-type){border-bottom: 1px solid $gray;}
-      a {
-        color: $lblack;
-        &:hover {
-          color: $cf60;
-        }
+  width: 970px;margin: -40px auto 20px;background: rgba($cff,.5);
+  border-radius: 5px 5px 0 0;height: 40px;padding: 0 5px;
+  ul {
+    display: table;width: 100%;table-layout: fixed;text-align: center;
+    li {display: table-cell;}
+    a {
+      height: 40px;display: block;line-height: 40px;font-size: 13px;color: $cff;padding-top: 5px;margin-top: -5px;
+      text-shadow: 1px 1px 1px $c55;border-radius: 3px 3px 0 0;
+      &:hover {
+        color: $elblack;background: $cff;font-size: 14px;line-height: 35px;font-weight: bold;
+        text-shadow: 1px 1px 1px $c99;
       }
     }
   }
 }
 .main {
-  position: fixed;left: 200px;top: 40px;right: 0;bottom: 0;padding: 20px;overflow-y: auto;
-  background: $cff;
-}
-.copy {
-  position: fixed;right: 0;bottom: 0;padding: 7px;font-size: 11px;
-  background: rgba($c22,.5);color: $cff;border-radius: 5px 0 0 0;
-  a {
-    color: $cff;
-  }
-}
-
-.main_tool {
-  height: 36px;margin: -20px -20px 20px;background: $lgray;padding: 0 20px;
-  @extend .cf;
-  .main_tool_hello {
-    line-height: 36px;float: left;color: $blue;margin-right: 10px;
-  }
-  .main_tool_btn {
-    float: left;padding-top: 4px;
-  }
-  .crumbs {
-    float: right;line-height: 36px;color: $lsilver;
-  }
+  width: 940px;margin: 0 auto;background: $cff;padding: 20px;border-radius: 5px;box-shadow: 0 0 5px $cdd inset;
 }
