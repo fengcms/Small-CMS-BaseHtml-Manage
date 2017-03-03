@@ -31,7 +31,7 @@
     <header class="main_tool">
       <div class="main_tool_hello">欢迎登录管理后台</div>
       <div class="main_tool_btn">
-        <a class="btn" href=""><i class="fa fa-chevron-left"></i> <span>返回上一页</span></a>
+        <a class="btn" href=""><i class="fa fa-chevron-left"></i>返回上一页</a>
         <div class="btn add"><i class="fa fa-plus"></i>添加文章</div>
         <div class="btn save"><i class="fa fa-save"></i>保存文章</div>
       </div>
@@ -106,6 +106,42 @@
         </td>
       </tr>
     </table>
+    <table class="table_edit">
+      <col width="100">
+      <col>
+      <tr>
+        <th>文章标题</th>
+        <td><input class="input_text w400" type="text"></td>
+      </tr>
+      <tr>
+        <th>归属栏目</th>
+        <td>
+          <select class="input_select w150">
+            <option value="1">栏目1</option>
+            <option value="2">栏目2</option>
+            <option value="3">栏目3</option>
+            <option value="4">栏目4</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>文章导读</th>
+        <td>
+          <textarea class="input_textarea"></textarea>
+        </td>
+      </tr>
+    </table>
+    <div class="pagination">
+      <a href="#">首页</a>
+      <a href="#">上一页</a>
+      <a href="#" class="curr">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">下一页</a>
+      <a href="#">末页</a>
+    </div>
   </section>
   <footer class="copy">
     Small CMS Manage System &copy; <a href="http://blog.csdn.net/fungleo">FungLeo </a>

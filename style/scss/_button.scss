@@ -1,8 +1,8 @@
 .btn {
   display: inline-block;margin-right: 4px;padding: 5px 8px;height: 18px;line-height: 18px;
-  background: $cff;border-radius: 5px;cursor: pointer;
+  background: $cff;border-radius: 5px;cursor: pointer;position: relative;
+  overflow: hidden;
   box-shadow: 0 0 0 1px $gray inset;color: $elblack;
-  @include dz();
   i {width: 15px;text-align: center;}
   &.add,&.edit {
     background: $green;color: $cff;box-shadow: 0 0 0 1px darken($green,.5) inset;
@@ -14,9 +14,17 @@
     background: $red;color: $cff;box-shadow: 0 0 0 1px darken($red,.5) inset;
   }
   &.mini {
-    font-size: 12px;padding:3px 5px;height: 12px;line-height: 12px;border-radius: 3px;margin-right: 2px;
+    font-size: 12px;padding:5px 5px;height: 12px;line-height: 12px;border-radius: 3px;margin-right: 2px;
+  }
+  &:after {
+    content: "";display: block;width: 10px;height: 100px;background: rgba($cff,.5);
+    top: -40px;position: absolute;left: -50px;
+    @include xz(45);
   }
   &:hover {
-    box-shadow: 0 0 0 100px rgba($c22,.1) inset;
+    &:after {
+      @include dz(0.5s);
+      left: 120px
+    }
   }
 }

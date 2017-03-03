@@ -34,18 +34,25 @@
   dl {
     dt {
       height: 36px;line-height: 36px;background: $gray;
-      text-indent: 30px;font-weight: bold;color: $lblack;
+      text-indent: 30px;font-weight: bold;color: $silver;font-size: 14px;
       i {width: 15px;text-indent: 0;}
     }
     dd {
       height: 45px;line-height: 45px;background: $lgray;
-      text-indent: 48px;
+      text-indent: 48px;font-size: 13px;
       &:not(:last-of-type){border-bottom: 1px solid $gray;}
+      a {
+        color: $lblack;
+        &:hover {
+          color: $cf60;
+        }
+      }
     }
   }
 }
 .main {
   position: fixed;left: 200px;top: 40px;right: 0;bottom: 0;padding: 20px;overflow-y: auto;
+  background: $cff;
 }
 .copy {
   position: fixed;right: 0;bottom: 0;padding: 7px;font-size: 11px;

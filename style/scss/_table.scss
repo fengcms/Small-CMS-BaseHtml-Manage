@@ -19,3 +19,18 @@
     background: $cf9;
   }
 }
+.table_edit {
+  width: 100%;line-height: 1.6;margin-bottom: 15px;
+  &,td,th {
+    padding: 8px;border: 1px solid $gray;
+  }
+  th {
+    text-align: right;background: $elgray;color: $lblack;font-size: 14px;
+  }
+  tr {
+    background: $cff;
+  }
+  tr:nth-child(2n) {
+    background: $cf9;
+  }
+}

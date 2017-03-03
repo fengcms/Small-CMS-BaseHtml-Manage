@@ -9,13 +9,16 @@ input,textarea,button {
 input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none;}
 input[type="number"]::-webkit-outer-spin-button {-webkit-appearance: none;}
 
-.input_text,.input_submit,.input_select {
-  display: inline-block;height: 16px;line-height: 16px;padding: 8px 0;border-radius: 5px;border: none;
-  outline: none;min-width: 50px;
+.input_text,.input_submit,.input_select,.input_textarea {
+  display: inline-block;border-radius: 5px;border: none;
+  min-width: 50px;outline: none;font-size: 13px;
   @include dz();
 }
-
-.input_text,.input_select {
+.input_text,.input_submit,.input_select {
+  padding: 8px 0;
+  height: 16px;line-height: 16px;
+}
+.input_text,.input_select,.input_textarea {
   background: $cff;
   text-indent: 10px;
   box-shadow: 0 0 0 1px $cdd inset,0 0 0 1px rgba($cff,.5) inset, 0 0 8px $cdd inset;
@@ -25,6 +28,9 @@ input[type="number"]::-webkit-outer-spin-button {-webkit-appearance: none;}
   &:focus {
     box-shadow:0 0 0 1px $blue inset, 0 0 0 2px rgba($cff,.5) inset, 0 0 8px $blue inset;
   }
+}
+.input_textarea {
+  height: 100px;padding: 8px;text-indent: 0;min-width: 400px;
 }
 .input_submit {
   background: $blue;color: $cff;text-align: center;
